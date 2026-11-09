@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-<!-- Keep proAr.png in the same GitHub repository folder as this HTML file. -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mohamed Emad — Data Analyst</title>
@@ -783,7 +782,6 @@ footer span { color: var(--accent) }
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; gap: 60px; text-align: center }
   .hero-tools { justify-content: center }
-  .depi-highlight { margin-left: auto; margin-right: auto; text-align: left }
   .hero-cta { justify-content: center }
   .hero-desc { margin: 20px auto 0 }
   .about-grid { grid-template-columns: 1fr; gap: 40px }
@@ -874,10 +872,7 @@ footer span { color: var(--accent) }
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-left">
-      <div class="hero-tag" style="display: inline-flex; align-items: center; gap: 8px;">
-        <img src="proAr.png" alt="DEPI Logo" style="width: 20px; height: 20px; object-fit: contain; border-radius: 4px;">
-        <span>Digital Egypt Pioneers Initiative · Professional Data Analyst Graduate</span>
-      </div>
+      <div class="hero-tag">Data Analyst · Egypt</div>
       <h1 class="hero-name">
         Mohamed<br>Emad <span class="grad-text">Hamdy</span>
       </h1>
@@ -892,40 +887,1018 @@ footer span { color: var(--accent) }
         <div class="tool-badge"><span class="icon">🗄️</span> SQL</div>
         <div class="tool-badge"><span class="icon">📊</span> Power BI</div>
         <div class="tool-badge"><span class="icon">📗</span> Excel</div>
-        <div class="tool-badge"><span class="icon">🐍</span> Python</div>
+        <div class="tool-badge"><span class="icon">⚡</span> DAX</div>
       </div>
 
       <div class="hero-cta">
-        <a href="#projects" class="btn-primary">View Projects</a>
-        <a href="#contact" class="btn-ghost">Get in Touch</a>
+        <a href="#projects"><button class="btn-primary">View Projects ↓</button></a>
+        <a href="#contact"><button class="btn-ghost">Get In Touch</button></a>
       </div>
     </div>
 
     <div class="hero-right">
       <div class="hero-photo-frame">
         <div class="photo-glow"></div>
-        <div class="photo-ring"></div>
         <div class="orbit"><div class="orbit-dot"></div></div>
         <div class="photo-placeholder">
-          <span>👨‍💻</span>
+          <img src="Mohamed Emad.jpg" alt="Mohamed Emad" onerror="this.style.display='none';this.parentElement.innerHTML='👨‍💻'">
         </div>
+        <div class="photo-ring"></div>
       </div>
 
+      <!-- MODIFICATION 2: Removed "2+ Years Exp" stat card. Now only 2 cards remain. -->
       <div class="stats-row">
-        <div class="stat-card">
-          <div class="stat-val">15+</div>
-          <div class="stat-label">Projects Built</div>
+        <div class="stat-card reveal">
+          <div class="stat-val">5+</div>
+          <div class="stat-label">Projects</div>
         </div>
-        <div class="stat-card">
-          <div class="stat-val">100%</div>
-          <div class="stat-label">Data Driven</div>
+        <div class="stat-card reveal reveal-delay-1">
+          <div class="stat-val">3+</div>
+          <div class="stat-label">Certificates</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-</div>
+<!-- ══════════ ABOUT ══════════ -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-label"><span>01 — About</span></div>
+    <h2 class="section-title">Who I <span class="acc">Am</span></h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <button class="translate-mini" onclick="toggleAbout(this)">🌐 اقرأ بالعربية</button>
+        <div id="about-en" class="prose">
+          <p>I'm a <strong>Data Analyst</strong> based in Egypt with a passion for uncovering hidden patterns in complex datasets. My work sits at the intersection of technical rigor and business storytelling.</p>
+          <p>Proficient in <strong>SQL</strong> for deep data querying, <strong>Power BI</strong> for building compelling visual narratives, and <strong>Advanced Excel</strong> for rapid analysis and modeling. I'm especially skilled in <strong>DAX formula engineering</strong> and designing efficient <strong>star schema data models</strong>.</p>
+          <p>Every project I deliver answers a business question — not just displays numbers. I believe data without context is noise; data with the right context is power.</p>
+        </div>
+        <div id="about-ar" class="prose prose-ar" style="display:none">
+          <p>أنا <strong>محلل بيانات</strong> مقيم في مصر، شغوف باكتشاف الأنماط المخفية داخل مجموعات البيانات المعقدة. عملي يجمع بين الدقة التقنية والقدرة على سرد القصص التجارية.</p>
+          <p>أتقن <strong>SQL</strong> للاستعلام العميق عن البيانات، و<strong>Power BI</strong> لبناء لوحات بيانية مؤثرة، و<strong>Excel المتقدم</strong> للتحليل السريع والنمذجة. أتمتع بخبرة خاصة في <strong>هندسة صيغ DAX</strong> وتصميم <strong>نماذج بيانات Star Schema</strong> الفعّالة.</p>
+          <p>كل مشروع أقدمه يجيب على سؤال تجاري حقيقي — لا يعرض أرقامًا فحسب. أؤمن بأن البيانات بلا سياق هي ضجيج، أما البيانات مع السياق الصحيح فهي قوة.</p>
+        </div>
+      </div>
 
+      <div class="about-visual reveal reveal-delay-1">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <div class="t-dot r"></div>
+            <div class="t-dot y"></div>
+            <div class="t-dot g"></div>
+            <div class="t-title">analyst_profile.sql</div>
+          </div>
+          <div class="terminal-body">
+            <div class="t-line"><span class="t-comment">-- Mohamed Emad Profile Query</span></div>
+            <div class="t-line"><span class="t-prompt">❯</span> <span class="t-cmd">SELECT</span></div>
+            <div class="t-line"><span class="t-out">  name,</span></div>
+            <div class="t-line"><span class="t-out">  role,</span></div>
+            <div class="t-line"><span class="t-out">  location,</span></div>
+            <div class="t-line"><span class="t-out">  experience_years,</span></div>
+            <div class="t-line"><span class="t-out">  top_skills</span></div>
+            <div class="t-line"><span class="t-cmd">FROM</span> <span class="t-val">analysts</span></div>
+            <div class="t-line"><span class="t-cmd">WHERE</span> <span class="t-val">id</span> <span class="t-cmd">=</span> <span class="t-val">'ME_001'</span><span class="t-cmd">;</span></div>
+            <br>
+            <div class="t-line"><span class="t-comment">-- Results:</span></div>
+            <div class="t-line"><span class="t-out">  name:       <span class="t-val">'Mohamed Emad Hamdy'</span></span></div>
+            <div class="t-line"><span class="t-out">  role:       <span class="t-val">'Data Analyst'</span></span></div>
+            <div class="t-line"><span class="t-out">  location:   <span class="t-val">'Egypt 🇪🇬'</span></span></div>
+            <div class="t-line"><span class="t-out">  exp_years:  <span class="t-val">0</span></span></div>
+            <div class="t-line"><span class="t-out">  skills:     <span class="t-val">['SQL','PowerBI','DAX','Excel']</span></span></div>
+            <br>
+            <div class="t-line"><span class="t-prompt">❯</span> <span class="cursor"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SKILLS ══════════ -->
+<section id="skills">
+  <div class="wrap">
+    <div class="section-label"><span>02 — Skills</span></div>
+    <h2 class="section-title">Technical <span class="acc">Arsenal</span></h2>
+    <div class="skills-grid">
+
+      <!-- MODIFICATION 3: SQL level changed from "Advanced" to "Beginner" with adjusted bar percentages -->
+      <div class="skill-card reveal" data-observe>
+        <div class="sk-icon">🗄️</div>
+        <div class="sk-name">SQL</div>
+        <div class="sk-level">Beginner</div>
+        <div class="sk-items">
+          <div class="sk-item">
+            <div class="sk-item-name">Queries & Joins</div>
+            <div class="sk-bar-wrap"><div class="sk-bar" data-w="55"></div></div>
+            <div class="sk-pct">55%</div>
+          </div>
+          <div class="sk-item">
+            <div class="sk-item-name">Aggregations</div>
+            <div class="sk-bar-wrap"><div class="sk-bar" data-w="60"></div></div>
+            <div class="sk-pct">60%</div>
+          </div>
+          <div class="sk-item">
+            <div class="sk-item-name">Subqueries</div>
+            <div class="sk-bar-wrap"><div class="sk-bar" data-w="45"></div></div>
+            <div class="sk-pct">45%</div>
+          </div>
+          <div class="sk-item">
+            <div class="sk-item-name">Window Functions</div>
+            <div class="sk-bar-wrap"><div class="sk-bar" data-w="35"></div></div>
+            <div class="sk-pct">35%</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-1" data-observe>
+        <div class="sk-icon">📊</div>
+        <div class="sk-name">Power BI</div>
+        <div class="sk-level">Advanced</div>
+        <div class="sk-items">
+          <div class="sk-item">
+            <div class="sk-item-name">DAX Formulas</div>
+            <div class="sk-bar-wrap"><div class="sk-bar" data-w="90"></div></div>
+            <div class="sk-pct">90%</div>
+          </div>
+          <div class="sk-item">
+            <div class="sk-item-name">Data Modeling</div>
+            <div class="sk-bar-wrap"><div class="sk-bar" data-w="88"></div></div>
+            <div class="sk-pct">88%</div>
+          </div>
+          <div class="sk-item">
+            <div class="sk-item-name">Dashboard Design</div>
+            <div class="sk-bar-wrap"><div class="sk-bar" data-w="92"></div></div>
+            <div class="sk-pct">92%</div>
+          </div>
+          <div class="sk-item">
+            <div class="sk-item-name">Power Query</div>
+            <div class="sk-bar-wrap"><div class="sk-bar" data-w="85"></div></div>
+            <div class="sk-pct">85%</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-2" data-observe>
+        <div class="sk-icon">📗</div>
+        <div class="sk-name">Excel</div>
+        <div class="sk-level">Advanced</div>
+        <div class="sk-items">
+          <div class="sk-item">
+            <div class="sk-item-name">Pivot Tables</div>
+            <div class="sk-bar-wrap"><div class="sk-bar" data-w="95"></div></div>
+            <div class="sk-pct">95%</div>
+          </div>
+          <div class="sk-item">
+            <div class="sk-item-name">Advanced Formulas</div>
+            <div class="sk-bar-wrap"><div class="sk-bar" data-w="90"></div></div>
+            <div class="sk-pct">90%</div>
+          </div>
+          <div class="sk-item">
+            <div class="sk-item-name">Data Visualization</div>
+            <div class="sk-bar-wrap"><div class="sk-bar" data-w="88"></div></div>
+            <div class="sk-pct">88%</div>
+          </div>
+          <div class="sk-item">
+            <div class="sk-item-name">What-if Analysis</div>
+            <div class="sk-bar-wrap"><div class="sk-bar" data-w="85"></div></div>
+            <div class="sk-pct">85%</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-3" data-observe>
+        <div class="sk-icon">🧠</div>
+        <div class="sk-name">Analytics</div>
+        <div class="sk-level">Core Competency</div>
+        <div class="sk-items">
+          <div class="sk-item">
+            <div class="sk-item-name">KPI Design</div>
+            <div class="sk-bar-wrap"><div class="sk-bar" data-w="93"></div></div>
+            <div class="sk-pct">93%</div>
+          </div>
+          <div class="sk-item">
+            <div class="sk-item-name">ETL Pipelines</div>
+            <div class="sk-bar-wrap"><div class="sk-bar" data-w="82"></div></div>
+            <div class="sk-pct">82%</div>
+          </div>
+          <div class="sk-item">
+            <div class="sk-item-name">Star Schema</div>
+            <div class="sk-bar-wrap"><div class="sk-bar" data-w="87"></div></div>
+            <div class="sk-pct">87%</div>
+          </div>
+          <div class="sk-item">
+            <div class="sk-item-name">Data Storytelling</div>
+            <div class="sk-bar-wrap"><div class="sk-bar" data-w="92"></div></div>
+            <div class="sk-pct">92%</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROJECTS ══════════ -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-label"><span>03 — Projects</span></div>
+    <h2 class="section-title">Featured <span class="acc">Work</span></h2>
+
+    <div class="projects-stack">
+
+      <!-- ── PROJECT 1: Ice Cream Store ── -->
+      <div class="proj-card reveal">
+        <div class="slider-section">
+          <div class="slider-track" id="sl1">
+            <img class="slide-img active" src="fb_project1.jpg" alt="Dashboard 1">
+            <img class="slide-img" src="fb_project2.jpg" alt="Dashboard 2">
+            <img class="slide-img" src="fb_project3.jpg" alt="Dashboard 3">
+            <img class="slide-img" src="fb_project4.jpg" alt="Dashboard 4">
+            <img class="slide-img" src="fb_project5.jpg" alt="Dashboard 5">
+          </div>
+          <button class="slide-nav prev" onclick="slideP('sl1',-1)">‹</button>
+          <button class="slide-nav next" onclick="slideP('sl1',1)">›</button>
+          <div class="slide-dots" id="sl1-dots"></div>
+        </div>
+
+        <div class="proj-content">
+          <div class="proj-header">
+            <div class="proj-titles">
+              <div class="proj-en">Flavor & Branch Performance Analysis</div>
+              <div class="proj-ar">تحليل الأداء التشغيلي لمتجر الآيس كريم</div>
+              <div class="proj-badges">
+                <span class="badge badge-blue">Power BI</span>
+                <span class="badge badge-green">DAX</span>
+                <span class="badge badge-purple">Star Schema</span>
+                <span class="badge badge-gold">Business Intelligence</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="kpi-strip">
+            <div class="kpi-item"><span class="kpi-v">$327K</span><span class="kpi-l">Total Revenue</span></div>
+            <div class="kpi-item"><span class="kpi-v green">$224K</span><span class="kpi-l">Net Profit</span></div>
+            <div class="kpi-item"><span class="kpi-v gold">68.6%</span><span class="kpi-l">Profit Margin</span></div>
+            <div class="kpi-item"><span class="kpi-v red">-6.96%</span><span class="kpi-l">YoY Revenue</span></div>
+            <div class="kpi-item"><span class="kpi-v">$89K</span><span class="kpi-l">Top Product (Cone)</span></div>
+            <div class="kpi-item"><span class="kpi-v">$111K</span><span class="kpi-l">Top Branch (Cairo)</span></div>
+          </div>
+
+          <button class="expand-trigger" onclick="toggleExpand(this)">
+            <span>Read Full Case Study</span>
+            <i class="arr">⌄</i>
+          </button>
+
+          <div class="expand-body">
+            <div class="tabs">
+              <button class="tab on" onclick="switchTab(event,'p1-ov')">📋 Overview</button>
+              <button class="tab" onclick="switchTab(event,'p1-op')">🏪 Operations</button>
+              <button class="tab" onclick="switchTab(event,'p1-beh')">👥 Consumer Behavior</button>
+              <button class="tab" onclick="switchTab(event,'p1-pr')">💰 Pricing & What-if</button>
+              <button class="tab" onclick="switchTab(event,'p1-rec')">💡 Recommendations</button>
+            </div>
+
+            <!-- OVERVIEW -->
+            <div id="p1-ov" class="pane on">
+              <div class="pane-translate-row">
+                <button class="tr-btn" onclick="togglePane(this,'p1-ov')"><span class="tr-flag">🌐</span> اقرأ بالعربية</button>
+              </div>
+              <div class="pane-en">
+                <div class="prose">
+                  <p><strong>"Beyond the Total Number"</strong> — In this project I analyzed sales data for a multi-branch ice cream store across Egypt (Cairo, Tanta, Mansoura, Alexandria) to decode financial performance and understand customer behavior across time.</p>
+                  <p>The journey began with general performance analysis revealing <strong>total revenue of $327K</strong> and <strong>net profit of $224K</strong>.</p>
+                  <p><strong>The Numeric Paradox:</strong> Despite revenue declining slightly by 6.96% year-over-year, the profit margin remained extremely strong at <strong>68.64%</strong> — proving the business is highly efficient, not shrinking.</p>
+                  <p><strong>Key Discovery:</strong> Data shattered the myth that ice cream is purely a summer product. Winter recorded sales very close to spring and autumn, opening doors for year-round marketing strategies.</p>
+                </div>
+                <div class="insight-row">
+                  <div class="insight-card"><div class="insight-num">$327K</div><div class="insight-txt">Total Revenue</div></div>
+                  <div class="insight-card"><div class="insight-num green">68.6%</div><div class="insight-txt">Profit Margin</div></div>
+                  <div class="insight-card"><div class="insight-num red">-6.96%</div><div class="insight-txt">YoY Revenue Change</div></div>
+                  <div class="insight-card"><div class="insight-num gold">4</div><div class="insight-txt">Cities Analyzed</div></div>
+                </div>
+              </div>
+              <div class="pane-ar prose prose-ar" style="display:none">
+                <p><strong>"ما وراء الرقم الإجمالي"</strong> — في هذا المشروع، قمت بتحليل بيانات مبيعات متجر آيس كريم يمتلك عدة فروع في مصر (القاهرة، طنطا، المنصورة، الإسكندرية) لفك شفرة الأداء المالي وفهم سلوك العميل عبر فترات زمنية مختلفة.</p>
+                <p>بدأت الرحلة بتحليل الأداء العام الذي كشف عن <strong>إيرادات إجمالية قدرها 327 ألف دولار</strong> و<strong>صافي ربح 224 ألف دولار</strong>.</p>
+                <p><strong>المفارقة الرقمية:</strong> رغم أن الإيرادات شهدت تراجعاً طفيفاً بنسبة 6.96%، إلا أن هامش الربح ظل قوياً جداً عند <strong>68.64%</strong> — مما يُثبت أن الأعمال كفوءة للغاية وليست متراجعة.</p>
+                <p><strong>الاكتشاف الأهم:</strong> حطّمت البيانات الأسطورة القائلة بأن الآيس كريم منتج صيفي بحت. سجّل الشتاء مبيعات قريبة جداً من الربيع والخريف، مما يفتح أبواباً لاستراتيجيات تسويقية على مدار السنة.</p>
+              </div>
+            </div>
+
+            <!-- OPERATIONS -->
+            <div id="p1-op" class="pane">
+              <div class="pane-translate-row">
+                <button class="tr-btn" onclick="togglePane(this,'p1-op')"><span class="tr-flag">🌐</span> اقرأ بالعربية</button>
+              </div>
+              <div class="pane-en">
+                <div class="prose">
+                  <p><strong>Product & Branch Dissection</strong></p>
+                  <p><strong>⭐ The Star Product:</strong> Cone is the best-selling product with revenue of <strong>$89K</strong>, representing the core of customer preference.</p>
+                  <p><strong>🏙️ Sales Stronghold:</strong> Cairo branch leads with <strong>$111K</strong> — nearly 34% of total revenue from a single location.</p>
+                  <p><strong>👤 Top Performer:</strong> Employee "Ahmed" achieves sales of <strong>$84K</strong>, indicating a clear performance gap between staff members — an HR optimization opportunity.</p>
+                </div>
+              </div>
+              <div class="pane-ar prose prose-ar" style="display:none">
+                <p><strong>تشريح المنتجات والفروع</strong></p>
+                <p><strong>⭐ نجم العرض:</strong> منتج الـ Cone هو الأكثر مبيعاً بإيرادات <strong>89 ألف دولار</strong>، يمثّل جوهر تفضيل العملاء.</p>
+                <p><strong>🏙️ معقل المبيعات:</strong> فرع القاهرة يتصدر بإيرادات <strong>111 ألف دولار</strong> — ما يقارب 34% من الإيرادات الإجمالية من موقع واحد.</p>
+                <p><strong>👤 الأفضل أداءً:</strong> الموظف "أحمد" يحقق مبيعات <strong>84 ألف دولار</strong>، مما يكشف عن فجوة أداء واضحة بين الموظفين — فرصة لتحسين الموارد البشرية.</p>
+              </div>
+            </div>
+
+            <!-- BEHAVIOR -->
+            <div id="p1-beh" class="pane">
+              <div class="pane-translate-row">
+                <button class="tr-btn" onclick="togglePane(this,'p1-beh')"><span class="tr-flag">🌐</span> اقرأ بالعربية</button>
+              </div>
+              <div class="pane-en">
+                <div class="prose">
+                  <p><strong>Consumer Behavior & Timing Insights</strong></p>
+                  <p><strong>🌆 Peak Period:</strong> Evening sessions dominate with <strong>50.51%</strong> of all sales. Friday is the weekly peak — combined, this means Friday evenings are the business's golden hour.</p>
+                  <p><strong>🛒 Market Basket Analysis:</strong> Strong correlation found between Cone and Cup — they appeared together <strong>87 times</strong> in transactions. This is a bundle offer waiting to be activated.</p>
+                </div>
+              </div>
+              <div class="pane-ar prose prose-ar" style="display:none">
+                <p><strong>تحليل سلوك المستهلك والتوقيت</strong></p>
+                <p><strong>🌆 فترة الذروة:</strong> الفترة المسائية تهيمن بنسبة <strong>50.51%</strong> من إجمالي المبيعات. الجمعة هي ذروة الأسبوع — وهذا يعني أن مساء الجمعة هو "الساعة الذهبية" للأعمال.</p>
+                <p><strong>🛒 تحليل سلة المشتريات:</strong> وُجد ارتباط قوي بين Cone و Cup — ظهرا معاً <strong>87 مرة</strong> في المعاملات. هذه فرصة عرض مجمّع لم تُفعَّل بعد.</p>
+              </div>
+            </div>
+
+            <!-- PRICING -->
+            <div id="p1-pr" class="pane">
+              <div class="pane-translate-row">
+                <button class="tr-btn" onclick="togglePane(this,'p1-pr')"><span class="tr-flag">🌐</span> اقرأ بالعربية</button>
+              </div>
+              <div class="pane-en">
+                <div class="prose">
+                  <p><strong>Decision Lab — Pricing & What-if Analysis</strong></p>
+                  <p><strong>💸 Discount Efficiency:</strong> Total discounts given were <strong>$9K</strong>. Analysis proves that increasing discounts does NOT lead to a proportional profit jump — the relationship is non-linear.</p>
+                  <p><strong>🔬 What-if Simulation:</strong> A 5% discount combined with 10% more orders produces only a <strong>2.29% profit increase</strong> — revealing the diminishing returns of discount-led growth strategies.</p>
+                </div>
+                <div class="code-b">
+<span class="cm">-- What-if Analysis DAX</span>
+What_If_Profit =
+<span class="kw">VAR</span> <span class="va">DiscountRate</span> = <span class="fn">SELECTEDVALUE</span>('What-If'[Value], 0.05)
+<span class="kw">VAR</span> <span class="va">OrderIncrease</span> = <span class="fn">SELECTEDVALUE</span>('Orders-If'[Value], 0.10)
+<span class="kw">VAR</span> <span class="va">NewRevenue</span> = [Gross Sales] * (1 + <span class="va">OrderIncrease</span>)
+<span class="kw">VAR</span> <span class="va">NewDiscount</span> = <span class="va">NewRevenue</span> * <span class="va">DiscountRate</span>
+<span class="kw">RETURN</span> <span class="va">NewRevenue</span> - <span class="va">NewDiscount</span> - [Total Cost]</div>
+              </div>
+              <div class="pane-ar prose prose-ar" style="display:none">
+                <p><strong>مختبر القرارات — التسعير وتحليل السيناريوهات</strong></p>
+                <p><strong>💸 كفاءة الخصم:</strong> إجمالي الخصومات الممنوحة بلغ <strong>9 آلاف دولار</strong>. يُثبت التحليل أن زيادة الخصومات لا تؤدي إلى قفزة متناسبة في الأرباح — العلاقة غير خطية.</p>
+                <p><strong>🔬 محاكاة السيناريوهات:</strong> خصم 5% مع زيادة 10% في الطلبات يُنتج زيادة في الأرباح بنسبة <strong>2.29% فقط</strong> — مما يكشف العوائد المتناقصة لاستراتيجيات النمو القائمة على الخصم.</p>
+              </div>
+            </div>
+
+            <!-- RECOMMENDATIONS -->
+            <div id="p1-rec" class="pane">
+              <div class="pane-translate-row">
+                <button class="tr-btn" onclick="togglePane(this,'p1-rec')"><span class="tr-flag">🌐</span> اقرأ بالعربية</button>
+              </div>
+              <div class="pane-en">
+                <div class="prose">
+                  <p><strong>💡 Strategic Recommendations</strong></p>
+                  <p><strong>1. Time-Target Marketing:</strong> Intensify marketing campaigns during evenings and Fridays — this is when 50%+ of revenue is generated.</p>
+                  <p><strong>2. Bundle Strategy:</strong> Activate Cone + Cup combo offers. The data shows 87 natural co-purchases — a bundle could increase basket size by 15-20%.</p>
+                  <p><strong>3. Branch Model Replication:</strong> Cairo's dominance isn't luck. Analyze its operational model and transfer best practices to underperforming branches.</p>
+                  <p><strong>4. Winter Marketing:</strong> Don't hibernate in winter. Data proves real demand exists year-round — capitalize on it with seasonal campaigns.</p>
+                  <p><strong>5. Discount Cap:</strong> Set a maximum discount threshold and run simulations before any promotional campaign.</p>
+                </div>
+              </div>
+              <div class="pane-ar prose prose-ar" style="display:none">
+                <p><strong>💡 التوصيات الاستراتيجية</strong></p>
+                <p><strong>1. التسويق الموجَّه زمنياً:</strong> تكثيف الحملات التسويقية في المساء وأيام الجمعة — هذا هو الوقت الذي تتولد فيه أكثر من 50% من الإيرادات.</p>
+                <p><strong>2. استراتيجية العروض المجمّعة:</strong> تفعيل عروض Cone + Cup معاً. البيانات تُظهر 87 عملية شراء مشتركة طبيعية — يمكن لعرض مجمّع أن يزيد قيمة السلة 15-20%.</p>
+                <p><strong>3. نقل نموذج الفرع الناجح:</strong> هيمنة القاهرة ليست حظاً. حلِّل نموذجها التشغيلي وانقل أفضل الممارسات للفروع الأقل أداءً.</p>
+                <p><strong>4. التسويق الشتوي:</strong> لا تُبطئ في الشتاء. البيانات تُثبت وجود طلب حقيقي على مدار السنة — استثمره بحملات موسمية.</p>
+                <p><strong>5. سقف الخصم:</strong> حدِّد حداً أقصى للخصم وشغِّل محاكاة قبل أي حملة ترويجية.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PROJECT 2: E-Commerce ── -->
+      <div class="proj-card reveal">
+        <div class="slider-section">
+          <div class="slider-track" id="sl2">
+            <img class="slide-img active" src="E-commerce Business Health Analysis/E-commerce_1.jpg" alt="E-commerce 1">
+            <img class="slide-img" src="E-commerce Business Health Analysis/E-commerce_2.jpg" alt="E-commerce 2">
+            <img class="slide-img" src="E-commerce Business Health Analysis/E-commerce_3.jpg" alt="E-commerce 3">
+            <img class="slide-img" src="E-commerce Business Health Analysis/E-commerce_4.jpg" alt="E-commerce 4">
+          </div>
+          <button class="slide-nav prev" onclick="slideP('sl2',-1)">‹</button>
+          <button class="slide-nav next" onclick="slideP('sl2',1)">›</button>
+          <div class="slide-dots" id="sl2-dots"></div>
+        </div>
+
+        <div class="proj-content">
+          <div class="proj-header">
+            <div class="proj-titles">
+              <div class="proj-en">E-commerce Business Health Analysis</div>
+              <div class="proj-ar">تحليل صحة أعمال التجارة الإلكترونية</div>
+              <div class="proj-badges">
+                <span class="badge badge-blue">Power BI</span>
+                <span class="badge badge-green">Advanced DAX</span>
+                <span class="badge badge-purple">ETL</span>
+                <span class="badge badge-gold">Logistics Analytics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="kpi-strip">
+            <div class="kpi-item"><span class="kpi-v">$2.3M</span><span class="kpi-l">Total Sales</span></div>
+            <div class="kpi-item"><span class="kpi-v green">$263K</span><span class="kpi-l">Net Profit</span></div>
+            <div class="kpi-item"><span class="kpi-v gold">+20.4%</span><span class="kpi-l">YoY Growth</span></div>
+            <div class="kpi-item"><span class="kpi-v red">$322K</span><span class="kpi-l">Discounts Given</span></div>
+            <div class="kpi-item"><span class="kpi-v red">8.06%</span><span class="kpi-l">Return Rate</span></div>
+            <div class="kpi-item"><span class="kpi-v red">$181K</span><span class="kpi-l">Lost to Returns</span></div>
+          </div>
+
+          <button class="expand-trigger" onclick="toggleExpand(this)">
+            <span>Read Full Case Study</span>
+            <i class="arr">⌄</i>
+          </button>
+
+          <div class="expand-body">
+            <div class="tabs">
+              <button class="tab on" onclick="switchTab(event,'p2-sum')">📋 Executive Summary</button>
+              <button class="tab" onclick="switchTab(event,'p2-dis')">💸 Discount Paradox</button>
+              <button class="tab" onclick="switchTab(event,'p2-ops')">🚚 Operations</button>
+              <button class="tab" onclick="switchTab(event,'p2-ret')">↩️ Returns Crisis</button>
+              <button class="tab" onclick="switchTab(event,'p2-dax')">⚡ DAX Measures</button>
+              <button class="tab" onclick="switchTab(event,'p2-rec')">💡 Recommendations</button>
+            </div>
+
+            <!-- SUMMARY -->
+            <div id="p2-sum" class="pane on">
+              <div class="pane-translate-row">
+                <button class="tr-btn" onclick="togglePane(this,'p2-sum')"><span class="tr-flag">🌐</span> اقرأ بالعربية</button>
+              </div>
+              <div class="pane-en">
+                <div class="prose">
+                  <p><strong>The Core Question: Why is profit margin low despite massive sales?</strong></p>
+                  <p>Data from a large e-commerce store with total sales of <strong>$2.3 million</strong> was analyzed. The investigation uncovered a <strong>"profit leak"</strong> — a triple threat of poor discount management (<strong>$322K</strong> in total discounts), high shipping costs (<strong>$226K</strong>), and a damaging return rate (<strong>8.06%</strong>).</p>
+                  <p>Despite 20.4% YoY revenue growth, the net profit margin was only <strong>12.4%</strong> — a clear signal that growth without operational efficiency is dangerous.</p>
+                </div>
+                <div class="insight-row">
+                  <div class="insight-card"><div class="insight-num">$2.3M</div><div class="insight-txt">Total Sales</div></div>
+                  <div class="insight-card"><div class="insight-num green">12.4%</div><div class="insight-txt">Profit Margin</div></div>
+                  <div class="insight-card"><div class="insight-num red">$322K</div><div class="insight-txt">Discount Drain</div></div>
+                  <div class="insight-card"><div class="insight-num red">8.06%</div><div class="insight-txt">Return Rate</div></div>
+                </div>
+              </div>
+              <div class="pane-ar prose prose-ar" style="display:none">
+                <p><strong>السؤال الجوهري: لماذا هامش الربح منخفض رغم ضخامة المبيعات؟</strong></p>
+                <p>تم تحليل بيانات متجر إلكتروني ضخم بإجمالي مبيعات <strong>2.3 مليون دولار</strong>. كشف التحقيق عن <strong>"نزيف أرباح"</strong> — تهديد ثلاثي من سوء إدارة الخصومات (<strong>322 ألف دولار</strong> خصومات إجمالية)، وتكاليف شحن مرتفعة (<strong>226 ألف دولار</strong>)، ومعدل مرتجعات مدمّر (<strong>8.06%</strong>).</p>
+                <p>رغم نمو الإيرادات بنسبة 20.4% سنوياً، بلغ هامش صافي الربح <strong>12.4% فقط</strong> — إشارة واضحة بأن النمو بلا كفاءة تشغيلية أمر خطير.</p>
+              </div>
+            </div>
+
+            <!-- DISCOUNT -->
+            <div id="p2-dis" class="pane">
+              <div class="pane-translate-row">
+                <button class="tr-btn" onclick="togglePane(this,'p2-dis')"><span class="tr-flag">🌐</span> اقرأ بالعربية</button>
+              </div>
+              <div class="pane-en">
+                <div class="prose">
+                  <p><strong>The Discount Paradox</strong></p>
+                  <p><strong>The Critical Finding:</strong> Any discount exceeding <strong>20%</strong> immediately flips the transaction into an operational loss. This threshold was determined by cross-referencing discount levels with gross margin data.</p>
+                  <p><strong>Discount Efficiency Score:</strong> The metric recorded <strong>-0.82</strong> — meaning for every dollar of discount given, revenue increased by only $0.18, far less than the discount cost. Discounts are destroying value, not creating it.</p>
+                </div>
+                <div class="code-b">
+<span class="cm">-- Discount Efficiency Measure</span>
+Discount_Efficiency =
+<span class="kw">VAR</span> <span class="va">TotalDiscount</span> = <span class="fn">SUM</span>(Orders[Discount Amount])
+<span class="kw">VAR</span> <span class="va">IncrementalSales</span> = [Gross Sales] - [Baseline Sales]
+<span class="kw">RETURN</span> <span class="fn">DIVIDE</span>(<span class="va">IncrementalSales</span> - <span class="va">TotalDiscount</span>, <span class="va">TotalDiscount</span>)
+<span class="cm">-- Result: -0.82 (negative = value destruction)</span>
+                </div>
+              </div>
+              <div class="pane-ar prose prose-ar" style="display:none">
+                <p><strong>مفارقة الخصم</strong></p>
+                <p><strong>الاكتشاف الحاسم:</strong> أي خصم يتجاوز <strong>20%</strong> يحوّل المعاملة فوراً إلى خسارة تشغيلية. تم تحديد هذا الحد عبر تقاطع مستويات الخصم مع بيانات هامش الربح الإجمالي.</p>
+                <p><strong>مؤشر كفاءة الخصم:</strong> سجّل المقياس <strong>0.82-</strong> — أي أن كل دولار خصم ممنوح يزيد الإيرادات بـ 0.18 دولار فقط، أقل بكثير من تكلفة الخصم. الخصومات تدمّر القيمة بدلاً من خلقها.</p>
+              </div>
+            </div>
+
+            <!-- OPERATIONS -->
+            <div id="p2-ops" class="pane">
+              <div class="pane-translate-row">
+                <button class="tr-btn" onclick="togglePane(this,'p2-ops')"><span class="tr-flag">🌐</span> اقرأ بالعربية</button>
+              </div>
+              <div class="pane-en">
+                <div class="prose">
+                  <p><strong>Operations & Logistics Deep Dive</strong></p>
+                  <p><strong>📦 The Tables Problem:</strong> The Tables category was identified as a "profit black hole" with a net loss of <strong>$16.6K</strong> — their weight causes disproportionately high shipping costs that wipe out any margin.</p>
+                  <p><strong>🗺️ Geographic Inefficiency:</strong> States like Alabama and South Carolina show dangerously low shipping efficiency relative to sales volume. Average shipping cost reaches <strong>$45 per shipment</strong> — unacceptable for low-ticket items.</p>
+                </div>
+                <div class="code-b">
+<span class="cm">-- Shipping Efficiency by Region</span>
+Shipping_Efficiency =
+<span class="kw">VAR</span> <span class="va">Net_Profit</span> = [Gross_Profit] - [Returned_Profit]
+<span class="kw">VAR</span> <span class="va">Ship_Cost</span> = <span class="fn">SUM</span>(Orders[Shipping Cost])
+<span class="kw">RETURN</span> <span class="fn">DIVIDE</span>(<span class="va">Net_Profit</span>, <span class="va">Ship_Cost</span>)
+<span class="cm">-- &lt;1.0 means shipping costs exceed net profit</span>
+                </div>
+              </div>
+              <div class="pane-ar prose prose-ar" style="display:none">
+                <p><strong>تحليل معمّق للعمليات واللوجستيات</strong></p>
+                <p><strong>📦 مشكلة الطاولات:</strong> تم تحديد فئة الطاولات بوصفها "ثقباً أسود للأرباح" بخسارة صافية <strong>16.6 ألف دولار</strong> — وزنها يسبّب تكاليف شحن مرتفعة بشكل غير متناسب تمحو أي هامش ربح.</p>
+                <p><strong>🗺️ الكفاءة الجغرافية:</strong> تُظهر ولايات مثل Alabama و South Carolina كفاءة شحن منخفضة بشكل خطير مقارنةً بحجم المبيعات. متوسط تكلفة الشحن يبلغ <strong>45 دولاراً للشحنة</strong> — غير مقبول للمنتجات ذات الأسعار المنخفضة.</p>
+              </div>
+            </div>
+
+            <!-- RETURNS -->
+            <div id="p2-ret" class="pane">
+              <div class="pane-translate-row">
+                <button class="tr-btn" onclick="togglePane(this,'p2-ret')"><span class="tr-flag">🌐</span> اقرأ بالعربية</button>
+              </div>
+              <div class="pane-en">
+                <div class="prose">
+                  <p><strong>The Returns Crisis</strong></p>
+                  <p><strong>🔴 Machines Sector:</strong> Recorded the highest return rate at <strong>14%</strong>, signaling deep product quality or description mismatch issues.</p>
+                  <p><strong>💀 Failed Products:</strong> Specific SKUs like TEC-MA registered a <strong>100% return rate</strong> — every single unit sold was returned. These products should be immediately delisted.</p>
+                  <p><strong>Total damage:</strong> <strong>$181K in lost sales revenue</strong> from returns.</p>
+                </div>
+                <div class="code-b">
+<span class="cm">-- Lost Revenue from Returns</span>
+Lost_Sales_Revenue =
+<span class="fn">CALCULATE</span>(
+    <span class="fn">SUM</span>(Orders[Sales]),
+    Orders[return] = <span class="st">"yes"</span>
+)
+<span class="cm">-- Result: $181,000 in lost revenue</span>
+
+<span class="cm">-- Return Rate by Category</span>
+Return_Rate =
+<span class="fn">DIVIDE</span>(
+    <span class="fn">COUNTROWS</span>(<span class="fn">FILTER</span>(Orders, Orders[return] = <span class="st">"yes"</span>)),
+    <span class="fn">COUNTROWS</span>(Orders)
+)
+                </div>
+              </div>
+              <div class="pane-ar prose prose-ar" style="display:none">
+                <p><strong>أزمة المرتجعات</strong></p>
+                <p><strong>🔴 قطاع الآلات:</strong> سجّل أعلى معدل مرتجعات بنسبة <strong>14%</strong>، مما يشير إلى مشاكل عميقة في جودة المنتج أو عدم تطابق الوصف.</p>
+                <p><strong>💀 المنتجات الفاشلة:</strong> أكواد منتجات محددة مثل TEC-MA سجّلت معدل مرتجعات <strong>100%</strong> — كل وحدة بيعت أُعيدت. يجب شطب هذه المنتجات فوراً.</p>
+                <p><strong>الضرر الإجمالي: 181 ألف دولار خسائر مبيعات</strong> بسبب المرتجعات.</p>
+              </div>
+            </div>
+
+            <!-- DAX -->
+            <div id="p2-dax" class="pane">
+              <div class="pane-translate-row">
+                <button class="tr-btn" onclick="togglePane(this,'p2-dax')"><span class="tr-flag">🌐</span> اقرأ بالعربية</button>
+              </div>
+              <div class="pane-en">
+                <div class="prose">
+                  <p><strong>Advanced DAX Engineering</strong></p>
+                  <p>Custom measures built to capture true financial impact, not just surface metrics:</p>
+                </div>
+                <div class="code-b">
+<span class="cm">-- YoY Growth with Direction Arrow</span>
+YoY_Growth_Arrow =
+<span class="kw">VAR</span> <span class="va">LastYear</span> = <span class="fn">CALCULATE</span>(<span class="fn">MAX</span>('Date'[year]))
+<span class="kw">VAR</span> <span class="va">CY</span> = <span class="fn">CALCULATE</span>([Gross Sales], 'Date'[year] = <span class="va">LastYear</span>)
+<span class="kw">VAR</span> <span class="va">PY</span> = <span class="fn">CALCULATE</span>([Gross Sales], 'Date'[year] = <span class="va">LastYear</span> - 1)
+<span class="kw">VAR</span> <span class="va">Growth</span> = <span class="fn">DIVIDE</span>(<span class="va">CY</span> - <span class="va">PY</span>, <span class="va">PY</span>)
+<span class="kw">VAR</span> <span class="va">Arrow</span> = <span class="fn">SWITCH</span>(<span class="fn">TRUE</span>(),
+    <span class="va">Growth</span> > 0, <span class="st">"↑"</span>,
+    <span class="va">Growth</span> < 0, <span class="st">"↓"</span>, <span class="st">"-"</span>)
+<span class="kw">RETURN</span> <span class="va">Arrow</span> &amp; <span class="st">" "</span> &amp; <span class="fn">FORMAT</span>(<span class="va">Growth</span>, <span class="st">"0.0%"</span>)
+
+<span class="cm">-- Net Profit After Returns</span>
+Net_Profit_Adjusted =
+[Gross Profit]
+- [Returned_Profit]
+- <span class="fn">SUM</span>(Orders[Shipping Cost])
+                </div>
+              </div>
+              <div class="pane-ar prose prose-ar" style="display:none">
+                <p><strong>هندسة DAX المتقدمة</strong></p>
+                <p>تم بناء مقاييس مخصصة لالتقاط الأثر المالي الحقيقي، وليس الأرقام السطحية فقط:</p>
+                <div class="code-b" style="direction:ltr;text-align:left">
+<span class="cm">-- نمو سنوي مع سهم الاتجاه</span>
+YoY_Growth_Arrow =
+<span class="kw">VAR</span> <span class="va">LastYear</span> = <span class="fn">CALCULATE</span>(<span class="fn">MAX</span>('Date'[year]))
+<span class="kw">VAR</span> <span class="va">CY</span> = <span class="fn">CALCULATE</span>([Gross Sales], 'Date'[year] = <span class="va">LastYear</span>)
+<span class="kw">VAR</span> <span class="va">PY</span> = <span class="fn">CALCULATE</span>([Gross Sales], 'Date'[year] = <span class="va">LastYear</span> - 1)
+<span class="kw">RETURN</span> <span class="fn">SWITCH</span>(<span class="fn">TRUE</span>(), ...) &amp; <span class="fn">FORMAT</span>(...)
+                </div>
+              </div>
+            </div>
+
+            <!-- RECOMMENDATIONS -->
+            <div id="p2-rec" class="pane">
+              <div class="pane-translate-row">
+                <button class="tr-btn" onclick="togglePane(this,'p2-rec')"><span class="tr-flag">🌐</span> اقرأ بالعربية</button>
+              </div>
+              <div class="pane-en">
+                <div class="prose">
+                  <p><strong>💡 Strategic Recommendations</strong></p>
+                  <p><strong>1. Hard Discount Cap:</strong> Implement a strict system rule preventing discounts above <strong>15-20%</strong>. No exceptions. Every % above this is a confirmed loss.</p>
+                  <p><strong>2. Portfolio Cleanse:</strong> Immediately remove products with >10% return rates. For Tables, either renegotiate supplier pricing or add a shipping surcharge to restore margin.</p>
+                  <p><strong>3. Minimum Order Value by Geography:</strong> States with high shipping costs should have enforced minimum order values to ensure logistics are covered by margin.</p>
+                  <p><strong>4. Product Description Audit:</strong> The 14% Machine return rate signals a description-reality gap. Improve product pages, add realistic photos, and set correct expectations.</p>
+                </div>
+              </div>
+              <div class="pane-ar prose prose-ar" style="display:none">
+                <p><strong>💡 التوصيات الاستراتيجية</strong></p>
+                <p><strong>1. سقف خصم صارم:</strong> تطبيق قاعدة نظام صارمة تمنع الخصومات فوق <strong>15-20%</strong>. لا استثناءات. كل نسبة فوق ذلك خسارة محققة.</p>
+                <p><strong>2. تطهير المحفظة:</strong> إزالة المنتجات ذات معدلات المرتجعات >10% فوراً. لفئة الطاولات، إما إعادة التفاوض مع الموردين أو إضافة رسوم شحن إضافية لاستعادة الهامش.</p>
+                <p><strong>3. حد أدنى للطلب حسب الجغرافيا:</strong> الولايات ذات تكاليف الشحن المرتفعة يجب أن يكون لها قيمة طلب دنيا مفروضة لضمان تغطية اللوجستيات بالهامش.</p>
+                <p><strong>4. مراجعة أوصاف المنتجات:</strong> معدل المرتجعات 14% للآلات يشير لفجوة بين الوصف والواقع. حسِّن صفحات المنتج وأضف صوراً واقعية وحدّد توقعات صحيحة.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CERTIFICATES ══════════ -->
+<section id="certs">
+  <div class="wrap">
+    <div class="section-label"><span>04 — Certificates</span></div>
+    <h2 class="section-title">Professional <span class="acc">Credentials</span></h2>
+    <div class="certs-grid">
+
+      <div class="cert-card reveal">
+        <div class="cert-img-wrap">
+          <img src="Data Transformation in power bi.png" alt="Data Transformation" onclick="openPopup(this.src)">
+          <div class="cert-overlay"></div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-title">Data Transformation in Power BI</div>
+          <div class="cert-issuer">DataCamp · 2024</div>
+          <div class="cert-btns">
+            <button class="cert-btn cert-btn-preview" onclick="openPopup('Data Transformation in power bi.png')">Preview</button>
+            <a class="cert-btn cert-btn-view" href="https://www.datacamp.com/completed/statement-of-accomplishment/course/e686cfc0c0906f9569fc3c411b468fa769c9b0cc" target="_blank">View Certificate ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal reveal-delay-1">
+        <div class="cert-img-wrap">
+          <img src="intermediante Sql.jpg" alt="Intermediate SQL" onclick="openPopup(this.src)">
+          <div class="cert-overlay"></div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-title">Intermediate SQL</div>
+          <div class="cert-issuer">DataCamp · 2024</div>
+          <div class="cert-btns">
+            <button class="cert-btn cert-btn-preview" onclick="openPopup('intermediante Sql.jpg')">Preview</button>
+            <a class="cert-btn cert-btn-view" href="https://www.datacamp.com/completed/statement-of-accomplishment/course/fe2ff1270f4fb6187ad25757aeba17846d8b42bb" target="_blank">View Certificate ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal reveal-delay-2">
+        <div class="cert-img-wrap">
+          <img src="Intermediate_Data_Modeling_in_Power_BI.png" alt="Data Modeling" onclick="openPopup(this.src)">
+          <div class="cert-overlay"></div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-title">Intermediate Data Modeling in Power BI</div>
+          <div class="cert-issuer">DataCamp · 2024</div>
+          <div class="cert-btns">
+            <button class="cert-btn cert-btn-preview" onclick="openPopup('Intermediate_Data_Modeling_in_Power_BI.png')">Preview</button>
+            <a class="cert-btn cert-btn-view" href="https://www.datacamp.com/completed/statement-of-accomplishment/course/6241db4e965e2b2e4b57a85def5ee487f4b05814" target="_blank">View Certificate ↗</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="section-label"><span>05 — Contact</span></div>
+    <h2 class="section-title">Let's <span class="acc">Connect</span></h2>
+    <div class="contact-card reveal">
+      <div class="contact-glyph">📬</div>
+      <h3>Open to Opportunities</h3>
+      <p>Looking for a data analyst role where I can transform complex data into business value. Let's talk.</p>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:mohamed3mad131@gmail.com">
+          <span class="c-icon">✉️</span> mohamed3mad131@gmail.com
+        </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/mohamed-emad-76b24a294" target="_blank">
+          <span class="c-icon">💼</span> LinkedIn Profile
+        </a>
+        <a class="contact-link" href="tel:01040699963">
+          <span class="c-icon">📱</span> 01040699963
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <p>© 2026 <span>Mohamed Emad Hamdy</span> · Built with passion & data intuition</p>
+</footer>
+
+</div><!-- /z1 -->
+
+<script>
+/* ═══════════════════════════════════════
+   MODIFICATION 4: Force scroll to top on page load/refresh
+═══════════════════════════════════════ */
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+window.addEventListener('load', function() {
+  window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+});
+// Also handle the case where page loads with a hash
+if (!window.location.hash) {
+  window.scrollTo(0, 0);
+}
+
+/* ═══════════════════════════════════════
+   THEME
+═══════════════════════════════════════ */
+(function(){
+  var t = localStorage.getItem('theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', t);
+  document.getElementById('theme-icon').textContent = t === 'dark' ? '☀️' : '🌙';
+})();
+function toggleTheme() {
+  var t = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', t);
+  localStorage.setItem('theme', t);
+  document.getElementById('theme-icon').textContent = t === 'dark' ? '☀️' : '🌙';
+}
+
+/* ═══════════════════════════════════════
+   SCROLL PROGRESS
+═══════════════════════════════════════ */
+window.addEventListener('scroll', function() {
+  var h = document.documentElement.scrollHeight - window.innerHeight;
+  var p = (window.scrollY / h) * 100;
+  document.getElementById('progress').style.width = p + '%';
+});
+
+/* ═══════════════════════════════════════
+   REVEAL ON SCROLL
+═══════════════════════════════════════ */
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      // animate skill bars
+      e.target.querySelectorAll('.sk-bar').forEach(function(bar) {
+        setTimeout(function() {
+          bar.style.width = bar.dataset.w + '%';
+          bar.classList.add('animating');
+        }, 200);
+      });
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.reveal').forEach(function(el) {
+  observer.observe(el);
+});
+
+// Also trigger skill bars on skill section scroll
+var skillsObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.sk-bar').forEach(function(bar, i) {
+        setTimeout(function() {
+          bar.style.transition = 'transform 1.2s ease ' + (i * 0.1) + 's';
+          bar.classList.add('animating');
+        }, 100);
+      });
+    }
+  });
+}, { threshold: 0.2 });
+document.querySelectorAll('.skill-card').forEach(function(el) {
+  skillsObserver.observe(el);
+});
+
+/* ═══════════════════════════════════════
+   SLIDER
+═══════════════════════════════════════ */
+function slideP(id, dir) {
+  var track = document.getElementById(id);
+  var imgs = track.querySelectorAll('.slide-img');
+  var current = 0;
+  imgs.forEach(function(img, i) { if (img.classList.contains('active')) current = i; });
+  imgs[current].classList.remove('active');
+  var next = (current + dir + imgs.length) % imgs.length;
+  imgs[next].classList.add('active');
+  updateDots(id, next, imgs.length);
+}
+
+function updateDots(id, active, total) {
+  var dotsEl = document.getElementById(id + '-dots');
+  if (!dotsEl) return;
+  var dots = dotsEl.querySelectorAll('.slide-dot');
+  dots.forEach(function(d, i) {
+    d.classList.toggle('active', i === active);
+  });
+}
+
+// Init dots
+['sl1', 'sl2'].forEach(function(id) {
+  var track = document.getElementById(id);
+  if (!track) return;
+  var imgs = track.querySelectorAll('.slide-img');
+  var dotsEl = document.getElementById(id + '-dots');
+  if (!dotsEl) return;
+  imgs.forEach(function(_, i) {
+    var d = document.createElement('div');
+    d.className = 'slide-dot' + (i === 0 ? ' active' : '');
+    d.onclick = function() {
+      var allImgs = track.querySelectorAll('.slide-img');
+      allImgs.forEach(function(img) { img.classList.remove('active'); });
+      allImgs[i].classList.add('active');
+      updateDots(id, i, allImgs.length);
+    };
+    dotsEl.appendChild(d);
+  });
+});
+
+/* ═══════════════════════════════════════
+   EXPAND
+═══════════════════════════════════════ */
+function toggleExpand(btn) {
+  var body = btn.nextElementSibling;
+  var open = body.classList.contains('open');
+  btn.classList.toggle('open', !open);
+  body.classList.toggle('open', !open);
+  btn.querySelector('span').textContent = open ? 'Read Full Case Study' : 'Hide Case Study';
+}
+
+/* ═══════════════════════════════════════
+   TABS
+═══════════════════════════════════════ */
+function switchTab(e, id) {
+  var card = e.currentTarget.closest('.expand-body');
+  card.querySelectorAll('.pane').forEach(function(p) { p.classList.remove('on') });
+  card.querySelectorAll('.tab').forEach(function(t) { t.classList.remove('on') });
+  document.getElementById(id).classList.add('on');
+  e.currentTarget.classList.add('on');
+}
+
+/* ═══════════════════════════════════════
+   TRANSLATION (pane level)
+═══════════════════════════════════════ */
+function togglePane(btn, paneId) {
+  var pane = document.getElementById(paneId);
+  var enEl = pane.querySelector('.pane-en');
+  var arEl = pane.querySelector('.pane-ar');
+  if (!enEl || !arEl) return;
+  var showingEn = enEl.style.display !== 'none';
+  if (showingEn) {
+    enEl.style.display = 'none';
+    arEl.style.display = 'block';
+    btn.innerHTML = '<span class="tr-flag">🌐</span> Read in English';
+  } else {
+    enEl.style.display = 'block';
+    arEl.style.display = 'none';
+    btn.innerHTML = '<span class="tr-flag">🌐</span> اقرأ بالعربية';
+  }
+}
+
+/* ═══════════════════════════════════════
+   ABOUT TRANSLATION
+═══════════════════════════════════════ */
+function toggleAbout(btn) {
+  var en = document.getElementById('about-en');
+  var ar = document.getElementById('about-ar');
+  var showingEn = en.style.display !== 'none';
+  en.style.display = showingEn ? 'none' : 'block';
+  ar.style.display = showingEn ? 'block' : 'none';
+  btn.textContent = showingEn ? '🌐 Read in English' : '🌐 اقرأ بالعربية';
+}
+
+/* ═══════════════════════════════════════
+   POPUP
+═══════════════════════════════════════ */
+function openPopup(src) {
+  document.getElementById('popup-img').src = src;
+  document.getElementById('popup').classList.add('on');
+  document.body.style.overflow = 'hidden';
+}
+function closePopup() {
+  document.getElementById('popup').classList.remove('on');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closePopup();
+});
+
+/* ═══════════════════════════════════════
+   CANVAS BACKGROUND
+═══════════════════════════════════════ */
+(function() {
+  var cv = document.getElementById('bg-canvas');
+  var cx = cv.getContext('2d');
+  var W, H, t = 0;
+  var nodes = [], edges = [], flowDots = [], bars = [], scatter = [];
+
+  function resize() {
+    W = cv.width = window.innerWidth;
+    H = cv.height = window.innerHeight;
+    init();
+  }
+
+  function init() {
+    nodes = []; edges = []; flowDots = []; bars = []; scatter = [];
+    var count = Math.max(10, Math.floor(W * H / 50000));
+    for (var i = 0; i < count; i++) {
+      nodes.push({ x: Math.random() * W, y: Math.random() * H, r: 1.5 + Math.random() * 2.5, ph: Math.random() * Math.PI * 2 });
+    }
+    for (var i = 0; i < nodes.length; i++) {
+      for (var j = i + 1; j < nodes.length; j++) {
+        var dx = nodes[i].x - nodes[j].x, dy = nodes[i].y - nodes[j].y;
+        if (Math.sqrt(dx*dx+dy*dy) < 180) edges.push([i, j]);
+      }
+    }
+    for (var i = 0; i < edges.length; i++) {
+      if (Math.random() > 0.5) flowDots.push({ e: i, t: Math.random(), s: 0.002 + Math.random() * 0.003 });
+    }
+    for (var i = 0; i < 6; i++) {
+      var n = 4 + Math.floor(Math.random() * 5);
+      var vs = [];
+      for (var j = 0; j < n; j++) vs.push(0.3 + Math.random() * 0.7);
+      bars.push({ x: W * 0.1 + Math.random() * W * 0.8, y: H * 0.2 + Math.random() * H * 0.6, v: vs, ph: Math.random() * 6 });
+    }
+    for (var i = 0; i < 12; i++) {
+      scatter.push({ x: Math.random() * W, y: Math.random() * H, r: 1.5 + Math.random() * 2.5, ph: Math.random() * 6 });
+    }
+  }
+
+  function getAcc(a) {
+    var isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+    return isDark ? 'rgba(56,189,248,' + a + ')' : 'rgba(2,132,199,' + a + ')';
+  }
+
+  function draw() {
+    cx.clearRect(0, 0, W, H);
+    t += 0.012;
+
+    // edges
+    for (var i = 0; i < edges.length; i++) {
+      var a = nodes[edges[i][0]], b = nodes[edges[i][1]];
+      cx.beginPath(); cx.moveTo(a.x, a.y); cx.lineTo(b.x, b.y);
+      cx.strokeStyle = getAcc(0.04); cx.lineWidth = 0.6; cx.stroke();
+    }
+
+    // flow dots
+    for (var i = 0; i < flowDots.length; i++) {
+      var d = flowDots[i]; d.t += d.s; if (d.t > 1) d.t -= 1;
+      var a = nodes[edges[d.e][0]], b = nodes[edges[d.e][1]];
+      var px = a.x + (b.x - a.x) * d.t, py = a.y + (b.y - a.y) * d.t;
+      cx.beginPath(); cx.arc(px, py, 1.2, 0, 6.28);
+      cx.fillStyle = getAcc(0.25); cx.fill();
+    }
+
+    // nodes
+    for (var i = 0; i < nodes.length; i++) {
+      var n = nodes[i], p = Math.sin(t + n.ph) * 0.3 + 0.7;
+      cx.beginPath(); cx.arc(n.x, n.y, n.r * p, 0, 6.28);
+      cx.fillStyle = getAcc(0.18 * p); cx.fill();
+    }
+
+    // bars (mini chart visual)
+    for (var b = 0; b < bars.length; b++) {
+      var bar = bars[b], th = 40, bw = 5, gap = 3;
+      for (var j = 0; j < bar.v.length; j++) {
+        var an = Math.sin(t * 0.4 + j + bar.ph) * 0.2 + 0.8;
+        var h = bar.v[j] * th * an;
+        var x = bar.x + j * (bw + gap), y = bar.y + th - h;
+        cx.fillStyle = getAcc(0.04 + j * 0.008);
+        cx.fillRect(x, y, bw, h);
+      }
+    }
+
+    // scatter
+    for (var i = 0; i < scatter.length; i++) {
+      var s = scatter[i], f = Math.sin(t * 0.6 + s.ph) * 0.5 + 0.5;
+      cx.beginPath(); cx.arc(s.x, s.y, s.r * f, 0, 6.28);
+      cx.fillStyle = getAcc(0.06 * f); cx.fill();
+    }
+
+    requestAnimationFrame(draw);
+  }
+
+  window.addEventListener('resize', resize);
+  resize();
+  draw();
+})();
+</script>
 </body>
 </html>
